@@ -24,6 +24,4 @@ A browser-based number guessing game built using HTML, CSS, and JavaScript.
 * CSS
 * JavaScript
 
-## Live Demo
 
-Add your GitHub Pages link here after deployment.
