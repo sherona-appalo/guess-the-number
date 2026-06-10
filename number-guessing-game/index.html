@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-box">
+  <h1>🎯 Guess the Number</h1>
+  <p class="subtitle">Guess a number between <b>001</b> and <b>999</b></p>
+
+  <div class="modes">
+    <button onclick="setMode('daily')">📅 Daily Mode</button>
+    <button onclick="setMode('unlimited')">♾ Unlimited Mode</button>
+  </div>
+
+  <p id="modeText">Mode: Daily</p>
+
+  <!-- WORDLE STYLE BOXES -->
+  <div class="digit-box">
+    <div class="digit" id="d0"></div>
+    <div class="digit" id="d1"></div>
+    <div class="digit" id="d2"></div>
+  </div>
+
+  <button onclick="submitGuess()">Guess</button>
+
+  <!-- PLAY AGAIN BUTTON -->
+  <button id="playAgainBtn" onclick="playAgain()" style="display:none;">
+    ▶ Play Again
+  </button>
+
+  <p id="message"></p>
+  <p id="attempts">Attempts: 0</p>
+  <p id="dailyStreak">Daily Streak: 0</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
